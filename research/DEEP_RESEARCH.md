@@ -4,6 +4,34 @@
 **Copyright:** © 2026 Sandeep Barupal. All rights reserved, except as stated below.  
 **Research status:** Detailed research draft — company ke ticket process ke saath validate karna hoga.
 
+## Research Overview
+
+| Item | Details |
+|---|---|
+| Product | ITDesk |
+| Main focus | IT helpdesk aur employee support |
+| Language | Aasaan Hindi + simple English |
+| Owner / Content Creator | Sandeep Barupal |
+| Copyright | © 2026 Sandeep Barupal |
+
+## Table of Contents
+
+- [1. ITDesk kya hai?](#1-itdesk-kya-hai)
+- [2. Kiske kaam aayega?](#2-kiske-kaam-aayega)
+- [3. Similar products se kya seekhein?](#3-similar-products-se-kya-seekhein)
+- [4. Main features](#4-main-features)
+- [5. Pages / screens](#5-pages-screens)
+- [6. Main workflow](#6-main-workflow)
+- [7. Technical planning](#7-technical-planning)
+- [8. Security](#8-security)
+- [9. Development phases](#9-development-phases)
+- [10. Success metrics](#10-success-metrics)
+- [11. Risks](#11-risks)
+- [12. Original product idea](#12-original-product-idea)
+- [13. Sources](#13-sources)
+
+---
+
 ## 1. ITDesk kya hai?
 ITDesk office employees ko IT help maangne aur IT team ko requests manage karne mein help karega. Jaise laptop issue, account access, software install ya network problem ke liye ticket banana.
 
@@ -61,3 +89,4 @@ Employee ko ticket banate waqt related help article dikhayein. Agar issue solve 
 - [NIST incident response resources](https://csrc.nist.gov/projects/incident-response)
 
 **Note:** Vendor ke plans, pricing aur included features ko decision se pehle dobara check karein.
+
