@@ -61,3 +61,29 @@ Risks: overly complex forms, bad category taxonomy, alert fatigue, SLA disputes,
 
 ## 12. Next work
 Build a dated pricing/feature matrix, document ticket lifecycle states, specify SLA calendars and permissions, then prototype requester and agent workflows separately.
+
+## 15. Deep research addendum — evidence and product decisions
+
+### Market evidence
+ServiceNow’s ITSM documentation centers on incidents, problems, changes, requests, self-service, AI-assisted actions, and service visibility. Jira Service Management exposes API resources for requests, customers, service desks, knowledge bases, organizations, and assets. Freshservice publishes tiered per-agent pricing and feature comparisons, illustrating that pricing can be packaged by agent and plan. Sources: [ServiceNow ITSM](https://www.servicenow.com/docs/r/it-service-management/r_ITServiceManagement.html), [Jira Service Management REST API](https://developer.atlassian.com/cloud/jira/service-desk/rest/), [Freshservice pricing](https://www.freshworks.com/freshservice/pricing/).
+
+### Competitive implications
+ITDesk should begin with an employee-friendly service portal and reliable ticket lifecycle, not an overlarge ITIL suite. A useful differentiator is a clear, configurable workflow that connects request → triage → SLA → knowledge suggestion → resolution → satisfaction, while keeping agent workload visible.
+
+### Recommended core workflows
+1. Employees submit requests through portal, email, or chat entry points.
+2. Rules classify, route, prioritize, and set SLA timers with explainable reasons.
+3. Agents manage queues, linked assets, internal notes, approvals, and escalations.
+4. Knowledge articles are suggested during intake and resolution; feedback improves article quality.
+5. Incidents can be grouped into a major incident with communication updates and post-incident review.
+6. Change requests require risk, impact, approvals, implementation plan, and rollback plan.
+7. Reports distinguish first response, resolution time, SLA breach, reopen rate, backlog age, and customer satisfaction.
+
+### Data and controls
+Model Requester, Agent, Ticket, Category, SLA, Queue, KnowledgeArticle, Approval, AssetReference, MajorIncident, Change, and AuditEvent. Separate customer-visible replies from internal notes. Enforce role and field-level access, protect attachments, preserve audit history, and make SLA pause/resume rules explicit. Integrations should use documented API scopes and idempotency for webhook retries.
+
+### Validation and success measures
+Measure ticket deflection with evidence, first-response and resolution percentiles, SLA attainment, reopen rate, agent utilization, knowledge helpfulness, and requester satisfaction. Avoid measuring agents only by ticket volume, which can reward premature closure.
+
+### Sources and caveats
+Vendor features and prices change frequently; validate plan limitations, regional pricing, taxes, and AI add-on costs before procurement comparisons.
